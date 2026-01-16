@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divya Raghav | Strategic Insights & Innovation</title>
+  <meta name="description" content="Divya Raghav – Strategic Insights & Innovation leader with 7+ years of experience across India and global markets." />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:'Inter',sans-serif;background:#0b0b0d;color:#f5f5f5;scroll-behavior:smooth}
+    header{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:80px;background:radial-gradient(circle at top right,#8b0000,#0b0b0d 60%);position:relative;overflow:hidden}
+    h1{font-family:'Bebas Neue',sans-serif;font-size:96px;letter-spacing:2px;margin:0}
+    h2{color:#ff3b3b;font-weight:400}
+    section{padding:80px}
+    .tagline{max-width:600px;color:#cfcfcf;font-size:18px}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+    .stat{background:#151518;border-radius:14px;padding:30px;border-left:4px solid #ff3b3b;transition:.3s}
+    .stat:hover{transform:translateY(-6px)}
+    .stat h3{font-family:'Bebas Neue';font-size:52px;margin:0}
+    .timeline-item{border-left:2px solid #2a2a2a;padding-left:24px;margin-bottom:40px}
+    .timeline-item span{color:#ff3b3b;font-weight:600}
+    .bar{margin:18px 0}
+    .bar span{display:block;height:10px;border-radius:6px;background:linear-gradient(90deg,#ff3b3b,#ff8a8a);animation:load 2s}
+    @keyframes load{from{width:0}to{}}
+    footer{background:#000;padding:60px;text-align:center}
+    a{color:#ff3b3b;text-decoration:none;font-weight:500}
+    .map{background:#151518;border-radius:16px;padding:40px;text-align:center}
+    .cta{margin-top:30px}
+    .btn{display:inline-block;border:1px solid #ff3b3b;padding:14px 26px;border-radius:30px;margin-right:12px}
+    .btn:hover{background:#ff3b3b;color:#000}
+    @media(max-width:768px){h1{font-size:64px}section,header{padding:40px}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Divya Raghav</h1>
+  <h2>Strategic Insights & Innovation</h2>
+  <p class="tagline">Turning consumer data into market-winning strategies across products, retail, and global markets.</p>
+  <div class="cta">
+    <a class="btn" href="#telemetry">View Career Telemetry</a>
+    <a class="btn" href="mailto:divya21raghav@gmail.com">Contact</a>
+  </div>
+</header>
+
+<section id="telemetry">
+  <h2>Career Telemetry</h2>
+  <div class="stats">
+    <div class="stat"><h3 data-target="7">0</h3><p>Years Experience</p></div>
+    <div class="stat"><h3 data-target="50">0</h3><p>Programs Led</p></div>
+    <div class="stat"><h3 data-target="105">0</h3><p>Max Sample (K)</p></div>
+    <div class="stat"><h3 data-target="5">0</h3><p>Countries</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Current Season</h2>
+  <div class="timeline-item">
+    <span>2023 – Present</span>
+    <h3>vivo Mobiles India</h3>
+    <p>Assistant Manager – Strategic Insights & Innovation. Driving consumer, product, retail & e-commerce intelligence across India and global markets.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Race History</h2>
+  <div class="timeline-item"><span>2019 – 2023</span><h3>MDRA</h3><p>National & international research across policy, trade, entertainment, gaming and consumer behavior.</p></div>
+  <div class="timeline-item"><span>2019</span><h3>Nielsen India</h3><p>Lok Sabha Elections – Opinion & exit polls.</p></div>
+  <div class="timeline-item"><span>2018</span><h3>Skyrams Outdoor Advertising</h3><p>Marketing & outdoor campaigns across 48 cities.</p></div>
+</section>
+
+<section>
+  <h2>Performance Metrics</h2>
+  <div class="bar">Strategy & Insights<span style="width:95%"></span></div>
+  <div class="bar">Consumer Behavior<span style="width:90%"></span></div>
+  <div class="bar">NPS / CSAT<span style="width:90%"></span></div>
+  <div class="bar">Retail & E-store<span style="width:85%"></span></div>
+  <div class="bar">IoT Ecosystem Research<span style="width:80%"></span></div>
+</section>
+
+<section>
+  <h2>Tracks Raced</h2>
+  <div class="map">India • China • Dubai • Thailand • Vietnam</div>
+</section>
+
+<section>
+  <h2>Podium Finishes</h2>
+  <p>Shining Star – vivo India • Harvard Case Study Marathon Winner • Shark Tank Competition Winner • National Youth Parliament – Best Speaker (2×) • Client Recognition: GAIL, DPIIT, IIFT</p>
+</section>
+
+<footer>
+  <h2>Pit Wall</h2>
+  <p>
+    <a href="mailto:divya21raghav@gmail.com">Email</a> |
+    <a href="https://bit.ly/38YfQ8h">LinkedIn</a>
+  </p>
+  <p>© divyaraghav.com</p>
+</footer>
+
+<script>
+const counters=document.querySelectorAll('[data-target]');
+const speed=80;
+counters.forEach(counter=>{
+  const update=()=>{
+    const target=+counter.dataset.target;
+    const count=+counter.innerText;
+    const inc=target/speed;
+    if(count<target){counter.innerText=Math.ceil(count+inc);setTimeout(update,40);}
+    else{counter.innerText=target+'+';}
+  };
+  update();
+});
+
+const header=document.querySelector('header');
+for(let i=0;i<25;i++){
+  const line=document.createElement('div');
+  line.style.position='absolute';
+  line.style.top=Math.random()*100+'%';
+  line.style.left='-20%';
+  line.style.width=Math.random()*200+100+'px';
+  line.style.height='1px';
+  line.style.background='rgba(255,59,59,0.4)';
+  line.style.animation=`speed ${Math.random()*3+2}s linear infinite`;
+  header.appendChild(line);
+}
+const style=document.createElement('style');
+style.innerHTML=`@keyframes speed{from{transform:translateX(0);opacity:0;}10%{opacity:1;}to{transform:translateX(140vw);opacity:0;}}`;
+document.head.appendChild(style);
+</script>
+</body>
+</html>
