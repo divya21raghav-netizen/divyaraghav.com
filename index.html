@@ -159,6 +159,59 @@ footer p{font-family:'Share Tech Mono',monospace;font-size:10px;color:rgba(255,2
 
 .fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease;}
 .fade-in.visible{opacity:1;transform:translateY(0);}
+
+@media (max-width: 768px) {
+  nav{padding:0.8rem 1.2rem;}
+  .nav-links{display:none;}
+  .nav-cta{font-size:10px;padding:6px 12px;}
+
+  .hero{grid-template-columns:1fr;padding:5rem 1.5rem 3rem;min-height:auto;gap:2rem;}
+  .hero-content{order:1;}
+  .hero-photo{order:2;}
+  h1{font-size:clamp(2.2rem,12vw,3.5rem);}
+  .photo-outer{width:260px;height:260px;}
+  .photo-img{width:260px;height:260px;}
+  .photo-badge{right:0;bottom:10px;}
+
+  .telemetry{grid-template-columns:repeat(2,1fr);padding:2rem 1.5rem;gap:1rem;}
+  .tele-item::after{display:none;}
+  .tele-number{font-size:2rem;}
+
+  section{padding:3rem 1.5rem;}
+  h2{font-size:1.8rem;}
+
+  .timeline{padding-left:1rem;}
+  .tl-item{padding-left:1rem;}
+
+  .skills-grid{grid-template-columns:1fr;}
+  .ach-grid{grid-template-columns:1fr;}
+  .globe-row{gap:8px;}
+  .globe-chip{padding:8px 12px;font-size:11px;}
+
+  .contact{padding:3rem 1.5rem;}
+  .contact h2{font-size:2rem;}
+  .contact-links{flex-direction:column;}
+
+  footer{padding:1.2rem 1.5rem;flex-direction:column;gap:6px;text-align:center;}
+
+  .section-eyebrow{font-size:9px;}
+  .hero-eyebrow{font-size:9px;flex-wrap:wrap;}
+  .hero-bio{font-size:0.95rem;}
+  .tl-tags{gap:4px;}
+  .tag{font-size:10px;}
+}
+
+@media (max-width: 480px) {
+  .hero{padding:4.5rem 1rem 2rem;}
+  h1{font-size:clamp(2rem,13vw,3rem);}
+  .photo-outer{width:220px;height:220px;}
+  .photo-img{width:220px;height:220px;}
+  .telemetry{padding:1.5rem 1rem;}
+  .tele-number{font-size:1.8rem;}
+  section{padding:2.5rem 1rem;}
+  .contact{padding:2.5rem 1rem;}
+}
+
 </style>
 </head>
 <body>
@@ -444,7 +497,7 @@ footer p{font-family:'Share Tech Mono',monospace;font-size:10px;color:rgba(255,2
   
   <div class="contact-links">
     <a href="mailto:divya21raghav@gmail.com" class="btn-white">Email Me</a>
-    <a href="https://bit.ly/38YfQ8h" class="btn-outline-white">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/divya-raghav-ab5050106/" class="btn-outline-white">LinkedIn</a>
   </div>
 </section>
 
